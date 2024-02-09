@@ -2,11 +2,24 @@
 # see http://homepages.warwick.ac.uk/~masfz/ModelingInfectiousDiseases/Chapter6/Program_6.4/Program_6_4.py 
 
 
-def stoch_eqns(IN)
+stoch_eqns <- function(input_densities){
+    
+    # we have 6 different rates to calculate
+    rates = rep(0, length.out=6)
+    
+    # 6 x 3 matrix reflecting the change in densities of
+    # S, I or R in response to the 
+    
+    
+    
+    # total density at the start    
+    Ntotal = sum(input_densities)
+    
+}
 
 
 
-def SIR_Gillespie(beta=1.0, 
+SIR_Gillespie <- function(beta=1.0, 
                   gamma=1.0/10.0, 
                   mu=5e-4, 
                   N0=5000.0,
